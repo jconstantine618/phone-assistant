@@ -15,7 +15,6 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def voice():
     caller = request.form.get("From", "someone")
 
-    # Compose a prompt for ChatGPT
     prompt = (
         "You are a friendly virtual assistant named JC's Assistant. "
         "Answer the phone politely and let the caller know that John Constantine is not available. "
@@ -60,4 +59,5 @@ def handle_recording():
     """, mimetype="text/xml")
 
 if __name__ == "__main__":
+    # Debug mode ON for development
     app.run(debug=True, port=5000)
