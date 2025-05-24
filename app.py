@@ -12,7 +12,7 @@ app = Flask(__name__)
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Toggle this to False to use a hardcoded reply and skip OpenAI while testing
-USE_OPENAI = True
+USE_OPENAI = False
 
 @app.route("/voice", methods=["POST"])
 def voice():
