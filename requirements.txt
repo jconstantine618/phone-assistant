@@ -1,4 +1,4 @@
-Flask
+flask
 twilio
-google-generativeai
+openai
 python-dotenv
