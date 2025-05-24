@@ -1,5 +1,41 @@
-.env
-venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-.DS_Store # macOS specific
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Flask cache
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+.env.*
+
+# macOS files
+.DS_Store
+
+# VS Code files
+.vscode/
+
+# Pytest cache
+.pytest_cache/
+
+# Logs
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Twilio recordings (if you save them locally)
+recordings/
